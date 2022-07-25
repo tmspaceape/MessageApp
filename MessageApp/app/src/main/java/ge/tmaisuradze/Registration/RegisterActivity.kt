@@ -26,6 +26,11 @@ class RegisterActivity : AppCompatActivity(), IRegisterView {
         presenter = RegisterPresenter(this)
     }
 
+    override fun onDestroy() {
+        presenter.detachView()
+        super.onDestroy()
+    }
+
     fun pressToSignInClicked(view: View) {
         val intent = Intent(this, LoginActivity::class.java).apply {}
         startActivity(intent)
@@ -51,7 +56,13 @@ class RegisterActivity : AppCompatActivity(), IRegisterView {
             Toast.makeText(this, "Couldn't register user: $errorMessage", Toast.LENGTH_SHORT).show()
             return
         }
-        startActivity(Intent(this, SuccessActivity::class.java))
+        showSuccessPage()
+    }
+
+    override fun showSuccessPage() {
+        val intent = Intent(this, SuccessActivity::class.java).apply {}
+        startActivity(intent)
+        finish()
     }
 
     fun registerClicked(view: View) {

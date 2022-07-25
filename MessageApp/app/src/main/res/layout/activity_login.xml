@@ -7,6 +7,12 @@
     tools:context=".LogIn.LoginActivity"
     android:backgroundTint="@color/white">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +31,7 @@
             android:src="@drawable/avatar_image_placeholder"/>
 
         <EditText
-            android:id="@+id/register_username"
+            android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="@dimen/default_margin_small"
@@ -36,7 +42,7 @@
             android:textColor="@color/white"/>
 
         <EditText
-            android:id="@+id/register_password"
+            android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="@dimen/default_margin_small"
@@ -49,12 +55,13 @@
 
 
         <Button
-            android:id="@+id/sign_up_button"
+            android:id="@+id/sign_in_button"
             android:layout_width="@dimen/sign_up_width"
             android:layout_height="@dimen/sign_up_height"
             android:layout_gravity="center"
             android:text="@string/sign_in"
             android:backgroundTint="@color/button_blue"
+            android:onClick="singInClicked"
             />
 
         <TextView
@@ -77,4 +84,5 @@
 
     </LinearLayout>
 
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

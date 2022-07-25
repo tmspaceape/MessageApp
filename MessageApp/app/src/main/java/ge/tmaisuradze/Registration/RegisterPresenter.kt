@@ -21,4 +21,8 @@ class RegisterPresenter(private var view: IRegisterView?): IRegisterPresenter {
     override fun onUserRegistered(user: User?, errorMessage: String?) {
         view?.onUserRegistered(user, errorMessage)
     }
+
+    override fun detachView() {
+        view = null
+    }
 }

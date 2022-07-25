@@ -12,4 +12,5 @@ interface IRegisterPresenter {
 
     fun onUserRegistered(user: User?, errorMessage: String?)
 
+    fun detachView()
 }
