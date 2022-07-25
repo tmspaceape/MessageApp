@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MessageApp">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".SuccessActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Registration.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
