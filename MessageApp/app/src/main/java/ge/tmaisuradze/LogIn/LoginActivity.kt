@@ -3,13 +3,12 @@ package ge.tmaisuradze.LogIn
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import ge.tmaisuradze.Main.MainActivity
 import ge.tmaisuradze.R
 import ge.tmaisuradze.Registration.RegisterActivity
-import ge.tmaisuradze.SuccessActivity
 
 class LoginActivity : AppCompatActivity(), ILoginView {
 
@@ -46,7 +45,7 @@ class LoginActivity : AppCompatActivity(), ILoginView {
     }
 
     override fun showSuccessPage() {
-        val intent = Intent(this, SuccessActivity::class.java).apply {}
+        val intent = Intent(this, MainActivity::class.java).apply {}
         startActivity(intent)
         finish()
     }

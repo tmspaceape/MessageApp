@@ -5,12 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.Toast
 import ge.tmaisuradze.Entities.User
 import ge.tmaisuradze.LogIn.LoginActivity
+import ge.tmaisuradze.Main.MainActivity
 import ge.tmaisuradze.R
-import ge.tmaisuradze.SuccessActivity
 
 class RegisterActivity : AppCompatActivity(), IRegisterView {
 
@@ -60,7 +59,7 @@ class RegisterActivity : AppCompatActivity(), IRegisterView {
     }
 
     override fun showSuccessPage() {
-        val intent = Intent(this, SuccessActivity::class.java).apply {}
+        val intent = Intent(this, MainActivity::class.java).apply {}
         startActivity(intent)
         finish()
     }

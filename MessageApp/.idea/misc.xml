@@ -3,12 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-anydpi/ic_add.xml" value="0.298" />
+        <entry key="app/src/main/res/drawable-v24/background.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/edit_text_bg.xml" value="0.298" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.298" />
+        <entry key="app/src/main/res/drawable/ic_add_background.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/ic_add_foreground.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/ic_home_background.xml" value="0.199" />
+        <entry key="app/src/main/res/drawable/ic_home_foreground.xml" value="0.199" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2435" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.298" />
+        <entry key="app/src/main/res/drawable/ic_search_background.xml" value="0.234" />
+        <entry key="app/src/main/res/drawable/ic_search_foreground.xml" value="0.234" />
+        <entry key="app/src/main/res/drawable/ic_settings.xml" value="0.298" />
         <entry key="app/src/main/res/drawable/styles.xml" value="0.2435" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16458333333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_success.xml" value="0.14427083333333332" />
+        <entry key="app/src/main/res/layout/chats_list_item.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.1526268115942029" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/menu/bottom_nav_bar_menu.xml" value="0.19010416666666666" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_add.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_search_round.xml" value="0.298" />
       </map>
     </option>
   </component>

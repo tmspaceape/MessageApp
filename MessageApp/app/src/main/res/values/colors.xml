@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="edit_text_color">#B5B0B0</color>
     <color name="button_blue">#3C65E1</color>
+    <color name="icon_grey">#878787</color>
+    <color name="transparent">#0F878787</color>
 </resources>
