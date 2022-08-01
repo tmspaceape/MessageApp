@@ -15,4 +15,9 @@
     <dimen name="default_icon_size_small">24dp</dimen>
     <dimen name="chats_list_item_height">80dp</dimen>
     <dimen name="chat_list_item_username_size">18sp</dimen>
+    <dimen name="chat_avatar_size">40dp</dimen>
+    <dimen name="message_text_size">16sp</dimen>
+    <dimen name="message_vertical_margin">8dp</dimen>
+    <dimen name="message_max_width">320dp</dimen>
+    <dimen name="message_border_radius">60dp</dimen>
 </resources>

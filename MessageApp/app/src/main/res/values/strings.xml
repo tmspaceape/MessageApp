@@ -22,4 +22,7 @@
     <string name="dummy_name">Dummy Name</string>
     <string name="dummy_message">Dummy Message: wubba lubba dub dub</string>
     <string name="dummy_time">1h</string>
+    <string name="dummy_profession">Android Developer</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="dummy_message_time">04:20</string>
 </resources>

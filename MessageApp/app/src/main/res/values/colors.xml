@@ -11,4 +11,7 @@
     <color name="button_blue">#3C65E1</color>
     <color name="icon_grey">#878787</color>
     <color name="transparent">#0F878787</color>
+    <color name="message_box_color">#DBD9D9</color>
+    <color name="sent_color">#FFBB86FC</color>
+    <color name="recieved_color">#B5B0B0</color>
 </resources>

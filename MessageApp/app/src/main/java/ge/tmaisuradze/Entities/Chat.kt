@@ -4,7 +4,7 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class Chat(
-    val recipient: User? = null,
+    val receiver: User? = null,
     val lastMessage: String? = null,
     val lastMessageTime: String? = null,
 ) : Comparable<Chat> {

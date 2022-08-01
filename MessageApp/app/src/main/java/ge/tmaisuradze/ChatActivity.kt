@@ -3,9 +3,9 @@ package ge.tmaisuradze
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class SuccessActivity : AppCompatActivity() {
+class ChatActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_success)
+        setContentView(R.layout.activity_chat)
     }
 }
