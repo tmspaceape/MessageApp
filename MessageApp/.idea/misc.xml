@@ -29,7 +29,7 @@
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_success.xml" value="0.14427083333333332" />
         <entry key="app/src/main/res/layout/chats_list_item.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.1526268115942029" />
+        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.18177083333333333" />
         <entry key="app/src/main/res/layout/received_message.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout/recieved_message.xml" value="0.35520833333333335" />

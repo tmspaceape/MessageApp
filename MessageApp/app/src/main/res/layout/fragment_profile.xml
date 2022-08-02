@@ -25,7 +25,7 @@
                 android:layout_width="@dimen/forms_avatar_size"
                 android:layout_height="@dimen/forms_avatar_size"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/forms_avatar_margin_top"
+                android:layout_marginTop="60dp"
                 android:layout_marginBottom="@dimen/forms_avatar_margin_bot"
                 android:src="@drawable/avatar_image_placeholder"/>
 
@@ -48,7 +48,6 @@
                 android:background="@drawable/edit_text_bg"
                 android:gravity="center"
                 android:hint="@string/profession"
-                android:inputType="textPassword"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"/>
 
@@ -59,7 +58,7 @@
                 android:layout_height="@dimen/sign_up_height"
                 android:layout_gravity="center"
                 android:text="@string/update"
-                android:backgroundTint="@color/button_blue"
+                android:backgroundTint="@color/purple_500"
                 android:onClick="updateClicked"
                 />
 
@@ -70,7 +69,7 @@
                 android:layout_gravity="center"
                 android:text="@string/sign_out"
                 android:backgroundTint="@color/icon_grey"
-                android:onClick="singOutClicked"
+                android:onClick="signOutClicked"
                 />
 
         </LinearLayout>

@@ -70,7 +70,7 @@
             android:layout_height="@dimen/sign_up_height"
             android:layout_gravity="center"
             android:text="@string/sign_up"
-            android:backgroundTint="@color/button_blue"
+            android:backgroundTint="@color/purple_500"
             android:onClick="registerClicked"
             />
 
@@ -87,7 +87,7 @@
             android:text="@string/press_here_to_sign_in"
             android:layout_gravity="center"
             android:clickable="true"
-            android:textColor="@color/button_blue"
+            android:textColor="@color/purple_500"
             android:focusable="true"
             android:onClick="pressToSignInClicked"/>
 
