@@ -15,7 +15,7 @@ data class Message(
 ) : Comparable<Message> {
 
     override fun compareTo(other: Message): Int {
-        val formatter = SimpleDateFormat("dd-MMM-yyyy")
+        val formatter = SimpleDateFormat("HH-mm")
         return formatter
             .parse(time)!!.compareTo(formatter.parse(other.time))
     }

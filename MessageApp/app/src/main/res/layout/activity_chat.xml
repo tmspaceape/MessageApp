@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChatActivity">
+    tools:context=".Chat.ChatActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/search_app_bar_layout"
@@ -22,7 +22,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/back_button"
                 android:layout_width="@dimen/default_icon_size_small"
                 android:layout_height="@dimen/default_icon_size_small"
                 android:layout_gravity="center"
@@ -31,14 +31,15 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/white" />
+                app:tint="@color/white"
+                android:onClick="backButtonClicked"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toStartOf="@+id/imageView"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/back_button"
                 app:layout_constraintTop_toTopOf="parent"
                 android:gravity="center_horizontal">
 
@@ -51,6 +52,7 @@
                     android:textSize="@dimen/chat_list_item_username_size" />
 
                 <TextView
+                    android:id="@+id/chat_profession"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dummy_profession"

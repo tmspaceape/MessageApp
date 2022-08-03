@@ -17,7 +17,7 @@ import ge.tmaisuradze.Entities.Chat
 import ge.tmaisuradze.Entities.User
 import ge.tmaisuradze.LogIn.LoginActivity
 import ge.tmaisuradze.R
-import ge.tmaisuradze.SearchActivity
+import ge.tmaisuradze.Search.SearchActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -31,11 +31,12 @@ class MainActivity() : AppCompatActivity(), IMainView, ChatsLoadedListener, Coro
     private lateinit var viewPager: ViewPager2
     private lateinit var fragments : ArrayList<Fragment>
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         presenter = MainPresenter(this)
-        fragments = arrayListOf(ChatsFragment(presenter), ProfileFragment())
+        val chatsFragment = ChatsFragment()
+        chatsFragment.presenter = presenter
+        fragments = arrayListOf(chatsFragment, ProfileFragment())
         if (!presenter.isSignedIn()) {
             startActivity(Intent(this, LoginActivity::class.java))
             return
@@ -76,7 +77,7 @@ class MainActivity() : AppCompatActivity(), IMainView, ChatsLoadedListener, Coro
     override fun onFragmentLoaded() {
         val appBar = findViewById<BottomAppBar>(R.id.bottom_app_bar)
         val scrollView = (viewPager.adapter as ViewPagerAdapter).getScrollView()
-        scrollView.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
+        scrollView?.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
             if (scrollY > oldScrollY){
                 appBar.performHide()
             }else{

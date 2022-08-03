@@ -1,13 +1,12 @@
 package ge.tmaisuradze.Main
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import ge.tmaisuradze.ChatActivity
+import ge.tmaisuradze.Chat.ChatActivity
 import ge.tmaisuradze.Entities.Chat
 import ge.tmaisuradze.R
 
@@ -17,7 +16,7 @@ class ChatsItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
     private val message = itemView.findViewById<TextView>(R.id.chats_item_message)
     private val time = itemView.findViewById<TextView>(R.id.chats_item_time)
 
-    fun bindChat(chat: Chat, presenter: IMainPresenter) {
+    fun bindChat(chat: Chat, presenter: IMainPresenter?) {
         username.text = chat.receiver!!.username
         if (chat.lastMessage?.length!! > 35){
             var tmp = chat.lastMessage.substring(0, 32)
@@ -38,7 +37,7 @@ class ChatsItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
 }
 
-class ChatsAdapter(var list: List<Chat>, val presenter: IMainPresenter): RecyclerView.Adapter<ChatsItemViewHolder>() {
+class ChatsAdapter(var list: List<Chat>, val presenter: IMainPresenter?): RecyclerView.Adapter<ChatsItemViewHolder>() {
 
     fun updateData(data: List<Chat>, index: Int) {
         list = data

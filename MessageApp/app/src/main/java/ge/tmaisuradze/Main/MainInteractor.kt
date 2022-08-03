@@ -14,13 +14,13 @@ import java.text.SimpleDateFormat
 
 class MainInteractor(val presenter: IMainPresenter) {
 
-    private val databaseUrl = "https://tmsmessageapp-default-rtdb.europe-west1.firebasedatabase.app/"
     private val auth = FirebaseAuth.getInstance()
+    private val databaseUrl = "https://tmsmessageapp-default-rtdb.europe-west1.firebasedatabase.app/"
     private val database = FirebaseDatabase.getInstance(databaseUrl)
     private val users = database.getReference("users")
     private val messages = database.getReference("messages")
     private val chatsList = mutableListOf<Chat>()
-    private val formatter = SimpleDateFormat("dd-MMM-yyyy")
+    private val formatter = SimpleDateFormat("HH-mm")
 
     fun fetchProfileData() {
         users.child(auth.currentUser!!.uid).get().addOnSuccessListener {

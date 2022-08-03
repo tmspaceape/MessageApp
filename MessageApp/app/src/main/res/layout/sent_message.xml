@@ -17,6 +17,7 @@
         android:layout_marginStart="@dimen/default_margin_small"/>
 
     <TextView
+        android:id="@id/message_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/default_margin_small"

@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MessageApp">
         <activity
-            android:name=".ChatActivity"
+            android:name=".Chat.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".SearchActivity"
+            android:name=".Search.SearchActivity"
             android:exported="false" />
         <activity
             android:name=".Registration.RegisterActivity"

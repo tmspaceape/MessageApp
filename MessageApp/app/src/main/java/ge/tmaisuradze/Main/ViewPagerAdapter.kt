@@ -30,7 +30,7 @@ class ViewPagerAdapter(activity: FragmentActivity, private val fragments: ArrayL
         (fragments[0] as ChatsFragment).setInfo(conversations, index)
     }
 
-    fun getScrollView(): NestedScrollView {
+    fun getScrollView(): NestedScrollView? {
         return (fragments[0] as ChatsFragment).getScrollView()
     }
 
